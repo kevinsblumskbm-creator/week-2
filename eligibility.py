@@ -13,8 +13,9 @@ try:
         studenta_atlaide = (16 <= vecums <= 26) and students
         print("-----")
 
-        print(f"Var balsot: {Jā √ if drikst_balsot else Nē X}")
-        print(f"Var īrēt auto: {Jā √ if drikst_iret_auto else Nē X}")
-        print(f"Senioru atlaide: {Jā √ if seniora_atlaide else Nē X}")
-        print(f"Studentu atlaide: {Jā √ if studenta_atlaide else Nē X}")
-        
+        print(f"Var balsot: {'Jā √' if drikst_balsot else 'Nē X'}")
+        print(f"Var īrēt auto: {'Jā √' if drikst_iret_auto else 'Nē X'}")
+        print(f"Senioru atlaide: {'Jā √' if seniora_atlaide else 'Nē X'}")
+        print(f"Studentu atlaide: {'Jā √' if studenta_atlaide else 'Nē X'}")
+except ValueError:
+    print(f"Kļūda: '{vecuma_ievade}' nav derīga atbilde.")
